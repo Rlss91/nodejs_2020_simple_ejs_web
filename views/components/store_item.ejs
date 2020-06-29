@@ -1,0 +1,14 @@
+<% if(placesarr.length>0) { %>
+<% for(let place of placesarr) { %>
+<div class="card bg-dark text-white">
+    <img src="/images/store/<%=place.img%>" class="card-img" alt="place">
+    <div class="card-img-overlay">
+        <h5 class="card-title"><%=place.title%></h5>
+        <p class="card-text"><%=place.disc%></p>
+        <p class="card-text"><a href="/store/<%=place.id%>">Buy now </a></p>
+    </div>
+</div>
+<% } %>
+<% } else { %>
+<div>cant find any location with this name</div>
+<% } %>
